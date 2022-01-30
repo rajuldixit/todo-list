@@ -1,0 +1,13 @@
+<div class="create-todo-wrapper">
+    <div class="form-data">
+        <div>
+            <span>Title</span>
+            <input type="text" id="title" placeholder="Enter title here" (keyup)="updateTitle($event)">
+        </div>    
+        <div>
+            <span>Completed</span>
+            <input type="checkbox" id="isCompleted" (change)="updateIsCompletedValue($event)">
+        </div>
+        <button (click)="onCreate()">Create</button>
+    </div> 
+</div>

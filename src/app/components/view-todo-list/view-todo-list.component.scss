@@ -1,0 +1,26 @@
+.todo-list-wrapper {
+    width: 100%;
+    margin: 0;
+    .display-flex {
+        display: flex;
+        width: 100%;
+        thead, td {
+            width: 350px;
+            border: 1px solid grey;
+            button {
+                border-radius: 4px;
+                background-color: #ec1022;
+                color: white;
+                border: none;
+                padding: 10px 25px;
+            }
+        }
+    }
+    button {
+        border-radius: 4px;
+        background-color: #306dc1;
+        color: white;
+        border: none;
+        padding: 10px 25px;
+    }
+}

@@ -1,0 +1,20 @@
+<div class="todo-list-wrapper">
+    <button (click)="createNewTodoItem()">Create New TODO item</button>
+    <table>
+        <tr class="display-flex">
+            <thead>ID</thead>
+            <thead>TITLE</thead>
+            <thead>COMPLETED</thead>
+            <thead>Action</thead>
+        </tr>
+        <tr *ngFor="let item of toDoList$" class="display-flex">
+            <td>{{item.id}}</td>
+            <td>
+                <del *ngIf="item.completed">{{item.title}}</del>
+                <span *ngIf="!item.completed">{{item.title}}</span>    
+            </td>
+            <td>{{item.completed}}</td>
+            <td><button (click)="deleteItem(item.id)">Delete</button></td>
+        </tr>
+    </table>
+</div>
